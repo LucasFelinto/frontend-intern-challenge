@@ -1,0 +1,13 @@
+.ranking-chaordic {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 89px;
+
+  > .title {
+    color: get-color("brand", "primary");
+    font-family: $serif;
+    margin-top: 72px;
+  }
+}

@@ -1,0 +1,23 @@
+.wrapper-hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../assets/background-home.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+
+  > .title {
+    font-family: $serif;
+    font-weight: bold;
+  }
+
+  > .paragraph {
+    max-width: rem-calc(455);
+    text-align: center;
+    margin-top: rem-calc(30);
+    margin-bottom: rem-calc(69);
+  }
+}

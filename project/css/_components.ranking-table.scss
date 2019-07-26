@@ -1,0 +1,32 @@
+.ranking-table {
+  margin-top: 53px;
+
+  .row {
+    margin: 5px;
+    position: relative;
+    width: 400px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .row::after {
+    content: "asda";
+    background: get-color("neutral", "light");
+    display: block;
+    height: 2px;
+    width: 100%;
+    margin: 18px 0px 18px 2px;
+    grid-column: span 2;
+  }
+
+  .url {
+    color: get-color("brand", "primary");
+    font-weight: bold;
+  }
+
+  .points {
+    color: get-color("neutral", "dark");
+    display: inline-block;
+    width: 200px;
+    text-align: end;
+  }
+}

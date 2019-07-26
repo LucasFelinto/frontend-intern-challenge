@@ -1,0 +1,7 @@
+@function get-color($palette: "brand", $color: "primary") {
+  @return map-get(map-get($colors, $palette), $color);
+}
+
+@function rem-calc($size) {
+  @return ($size / 16) * 1rem;
+}

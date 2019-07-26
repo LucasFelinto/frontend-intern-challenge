@@ -1,0 +1,96 @@
+.shorten-chaordic {
+  display: flex;
+  flex-wrap: wrap;
+
+  .input {
+    color: get-color("primary", "base");
+    border: none;
+    border-bottom: solid 3px currentColor;
+    width: rem-calc(336);
+    padding: 15px 0 15px 2px;
+    background: none;
+    font-weight: bold;
+
+    &::-webkit-input-placeholder {
+      text-indent: -9999px;
+    }
+  }
+
+  > .wrapper {
+    position: relative;
+  }
+
+  .placeholder {
+    color: get-color("primary", "base");
+    position: absolute;
+    bottom: 18px;
+  }
+
+  .reset {
+    border: none;
+    background: none;
+    color: get-color("neutral", "base");
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: rem-calc(18);
+    display: none;
+  }
+
+  .button {
+    color: get-color("neutral", "base");
+    background: get-color("primary", "base");
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    padding: 0;
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  > .container {
+    background: get-color("primary", "base");
+    margin-bottom: 0;
+    width: 100px;
+    height: 50px;
+    box-sizing: border-box;
+    margin-left: 11px;
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+    line-height: 50px;
+  }
+
+  .-fadeIn {
+    animation: fadeIn 2s;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .shorten-chaordic {
+    flex-direction: column;
+  }
+
+  .shorten-chaordic > .container {
+    width: 100%;
+    margin-left: 0px;
+    margin-top: 5px;
+  }
+
+  .container > .button {
+    padding: 5px 100px 5px 100px;
+  }
+}

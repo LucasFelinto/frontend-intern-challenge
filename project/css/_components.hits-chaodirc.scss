@@ -1,0 +1,44 @@
+.hits-chaodirc {
+  background: get-color("neutral", "light");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  &::before {
+    content: "";
+    clip-path: polygon(50% 50%, 0 1%, 100% 0);
+    width: 200px;
+    height: 200px;
+    background: get-color("neutral", "base");
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    top: 0;
+  }
+
+  > .title {
+    color: get-color("brand", "primary");
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: $serif;
+    margin-bottom: 40px;
+    margin-top: 100px;
+  }
+
+  > .points {
+    font-size: rem-calc(32);
+    color: get-color("brand", "primary");
+    background-color: get-color("neutral", "base");
+    border: solid 1px get-color("neutral", "lighter");
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-bottom: 15px;
+  }
+
+  > .paragraph {
+    color: get-color("neutral", "dark");
+    margin-bottom: 71px;
+  }
+}
